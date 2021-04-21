@@ -197,9 +197,10 @@ void playMinesweeper(){
         int row = charToindex(x);
         int col = charToindex(y);
 
-        if(nmoves == 0)
+        if(nmoves == 0){
             if(isMine(row, col, MineBoard))
                 replaceMine(row, col, MineBoard);
+        }
         
         if(z == 's'){
             if(GameBoard[row][col] == '.' && MineBoard[row][col] == '.'){ 
