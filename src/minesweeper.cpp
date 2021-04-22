@@ -1,5 +1,5 @@
-#include <iostream>
-#include <vector> 
+#include "minesweeper.h"
+
 using namespace std;
 
 
@@ -7,14 +7,13 @@ int NROWS;
 int NCOLUMNS;
 int MINES;
 
-const int BEGINNER = 0;
-const int INTERMEDIATE = 1;
-const int ADVANCED = 2;
-const int MAXSIDE = 30;
+// const int BEGINNER = 0;
+// const int INTERMEDIATE = 1;
+// const int ADVANCED = 2;
+// const int MAXSIDE = 30;
 
 
 void chooseDifficultyLevel(){
-    
     int level;
     cout << "Enter the Difficulty Level: " << endl;
     cout << "Press 0 for BEGINNER     (9  * 9 cells and 10 mines)" << endl;
@@ -251,11 +250,11 @@ void playMinesweeper(){
     return;
 }
 
-int main(){
+// int main(){
 
-    srand(time(NULL));
-    chooseDifficultyLevel();
-    playMinesweeper();
-    return 0;
+//     srand(time(NULL));
+//     chooseDifficultyLevel();
+//     playMinesweeper();
+//     return 0;
 
-} 
+// } 
