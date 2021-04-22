@@ -1,3 +1,3 @@
-import binders
+import mult
 
-binders.pymult(5, 3)
+print(mult.pymult(5, 3))
