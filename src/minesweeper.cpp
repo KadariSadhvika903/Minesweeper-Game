@@ -1,7 +1,5 @@
-#include <bits/stdc++.h>
-#include <stdlib.h>
-#include <utility>
-#include <vector> 
+#include "minesweeper.h"
+
 using namespace std;
 
 
@@ -9,14 +7,13 @@ int NROWS;
 int NCOLUMNS;
 int MINES;
 
-const int BEGINNER = 0;
-const int INTERMEDIATE = 1;
-const int ADVANCED = 2;
-const int MAXSIDE = 30;
+// const int BEGINNER = 0;
+// const int INTERMEDIATE = 1;
+// const int ADVANCED = 2;
+// const int MAXSIDE = 30;
 
 
 void chooseDifficultyLevel(){
-    
     int level;
     cout << "Enter the Difficulty Level: " << endl;
     cout << "Press 0 for BEGINNER     (9  * 9 cells and 10 mines)" << endl;
@@ -197,9 +194,10 @@ void playMinesweeper(){
         int row = charToindex(x);
         int col = charToindex(y);
 
-        if(nmoves == 0)
+        if(nmoves == 0){
             if(isMine(row, col, MineBoard))
                 replaceMine(row, col, MineBoard);
+        }
         
         if(z == 's'){
             if(GameBoard[row][col] == '.' && MineBoard[row][col] == '.'){ 
@@ -252,11 +250,15 @@ void playMinesweeper(){
     return;
 }
 
-int main(){
+// int main(){
 
-    srand(time(NULL));
-    chooseDifficultyLevel();
-    playMinesweeper();
-    return 0;
+//     srand(time(NULL));
+//     chooseDifficultyLevel();
+//     playMinesweeper();
+//     return 0;
 
+<<<<<<< HEAD:src/minesweeper.cpp
+// } 
+=======
 } 
+>>>>>>> 8a8c522cd368455ef4a2b7bdd27589e9cb3941a6:minesweeper.cpp
