@@ -145,7 +145,7 @@ void uncoverBoard(char GameBoard[][MAXSIDE], char MineBoard[][MAXSIDE], int row,
     if(count == 0){
     vector < pair <int,int> > neighbours = getNeighbours(row, col);
         
-        for(int i=0; i <= neighbours.size(); i++)
+        for(int i=0; i < neighbours.size(); i++)
             if(GameBoard[neighbours[i].first][neighbours[i].second] == '.')
                 uncoverBoard(GameBoard, MineBoard, neighbours[i].first, neighbours[i].second, nmoves);
     }
@@ -257,4 +257,8 @@ void playMinesweeper(){
 //     playMinesweeper();
 //     return 0;
 
+<<<<<<< HEAD:src/minesweeper.cpp
 // } 
+=======
+} 
+>>>>>>> 8a8c522cd368455ef4a2b7bdd27589e9cb3941a6:minesweeper.cpp
