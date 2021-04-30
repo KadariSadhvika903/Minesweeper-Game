@@ -5,4 +5,4 @@ class GUI:
         self.root = tk.Tk()
     
     def run(self):
-        self.root.mainloop()
+        self.root.mainloop()      

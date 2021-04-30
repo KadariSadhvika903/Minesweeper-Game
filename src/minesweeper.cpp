@@ -257,8 +257,3 @@ void playMinesweeper(){
 //     playMinesweeper();
 //     return 0;
 
-<<<<<<< HEAD:src/minesweeper.cpp
-// } 
-=======
-} 
->>>>>>> 8a8c522cd368455ef4a2b7bdd27589e9cb3941a6:minesweeper.cpp
